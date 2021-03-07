@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">To-Do List App</string>
+    <string name="to_do_app">To Do App</string>
+    <string name="to_do_list">To-Do List</string>
+    <string name="floating_action_button">Floating Action Button</string>
+    <string name="hi_dude_let_s_get_started">Hi, Dude! Let\'s get started!</string>
+    <string name="letsGetStartedDetails1">Take a moment to set up your profile and let your potential Taskers know who you are. Then get posting tasks!</string>
+    <string name="continueButton">Continue</string>
+
+</resources>
