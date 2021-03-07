@@ -6,5 +6,9 @@
     <string name="hi_dude_let_s_get_started">Hi, Dude! Let\'s get started!</string>
     <string name="letsGetStartedDetails1">Take a moment to set up your profile and let your potential Taskers know who you are. Then get posting tasks!</string>
     <string name="continueButton">Continue</string>
+    <string name="click_on">Click on</string>
+    <string name="to_create_a_new_task">to create a new task</string>
+    <string name="once_you_ve_created_a_task_swipe_left_to_edit_it">Once you\'ve created a task, swipe left to edit it</string>
+    <string name="or_swipe_right_to_delete_it">or swipe right to delete it</string>
 
 </resources>
