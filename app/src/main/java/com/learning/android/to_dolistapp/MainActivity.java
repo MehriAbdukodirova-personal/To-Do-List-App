@@ -1,6 +1,7 @@
 package com.learning.android.to_dolistapp;
 
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements OnDialogCloseList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mRecyclerview = findViewById(R.id.recyclerView);
         fab = findViewById(R.id.fab);

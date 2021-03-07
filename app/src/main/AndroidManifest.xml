@@ -9,9 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDoListApp">
-        <activity android:name=".GetStartedActivity2"></activity>
-        <activity android:name=".GetStartedActivity1" />
-        <activity android:name=".IntroductionActivity" />
+
+        <activity android:name=".GetStartedActivity2"
+            android:noHistory="true"></activity>
+
+        <activity android:name=".GetStartedActivity1"
+            android:noHistory="true"/>
+
+        <activity android:name=".IntroductionActivity"
+            android:noHistory="true"/>
+
         <activity android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

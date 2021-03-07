@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ToDoListApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/dark_cyan_800</item>
-        <item name="colorPrimaryVariant">@color/dark_cyan_900</item>
+        <item name="colorPrimary">@color/design_default_color_primary_dark</item>
+        <item name="colorPrimaryVariant">@color/design_default_color_primary_variant</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/dark_pink_700</item>

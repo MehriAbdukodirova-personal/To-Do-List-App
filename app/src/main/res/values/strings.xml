@@ -8,7 +8,6 @@
     <string name="continueButton">Continue</string>
     <string name="click_on">Click on</string>
     <string name="to_create_a_new_task">to create a new task</string>
-    <string name="once_you_ve_created_a_task_swipe_left_to_edit_it">Once you\'ve created a task, swipe left to edit it</string>
-    <string name="or_swipe_right_to_delete_it">or swipe right to delete it</string>
+    <string name="once_you_ve_created_a_task_swipe_left_to_edit_it">Once you\'ve created a task, swipe left to edit it or swipe right to delete it</string>
 
 </resources>

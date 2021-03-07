@@ -21,18 +21,25 @@
         android:layout_weight="2"
         android:padding="10dp"
         android:text="@string/once_you_ve_created_a_task_swipe_left_to_edit_it"
-        android:textSize="45sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="@color/black"/>
-
     <ImageView
-        android:id="@+id/imageViewTick"
+        android:id="@+id/imageViewLeftArrow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:src="@drawable/ic_baseline_add_circle_24" />
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+    <ImageView
+        android:id="@+id/imageViewRightArrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_arrow_forward_24" />
 
 
 
