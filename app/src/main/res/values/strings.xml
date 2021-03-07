@@ -3,11 +3,19 @@
     <string name="to_do_app">To Do App</string>
     <string name="to_do_list">To-Do List</string>
     <string name="floating_action_button">Floating Action Button</string>
-    <string name="hi_dude_let_s_get_started">Hi, Dude! Let\'s get started!</string>
+    <string name="hi_mate_let_s_get_started">Hi, Mate! Let\'s get started!</string>
     <string name="letsGetStartedDetails1">Take a moment to set up your profile and let your potential Taskers know who you are. Then get posting tasks!</string>
     <string name="continueButton">Continue</string>
     <string name="click_on">Click on</string>
     <string name="to_create_a_new_task">to create a new task</string>
-    <string name="once_you_ve_created_a_task_swipe_left_to_edit_it">Once you\'ve created a task, swipe left to edit it or swipe right to delete it</string>
+    <string name="once_you_ve_created_a_task_swipe_left_to_edit_it">Once you\'ve created a task,</string>
+    <string name="save">Save</string>
+    <string name="enter_a_new_task">Enter a new task</string>
+    <string name="this_is_a_dummy_text">This is a dummy text</string>
+    <string name="tick_icon">Tick icon</string>
+    <string name="arrow_icon">Arrow icon</string>
+    <string name="add_icon">add icon</string>
+    <string name="thank_you_for_providing_a_coding_challenge_please_follow_through_the_instructions_to_explore_the_app_more">Thank you for providing a coding challenge. Please follow through the instructions to explore the app more.</string>
+    <string name="swipe_left_to_edit_it_or_swipe_right_to_delete_it">swipe left to edit it or swipe right to delete it</string>
 
 </resources>

@@ -18,8 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/design_default_color_primary_dark"
-            android:text="This is a dummy text"
-            android:paddingStart="8dp">
+            android:text="@string/this_is_a_dummy_text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
 
         </com.google.android.material.checkbox.MaterialCheckBox>
     </RelativeLayout>

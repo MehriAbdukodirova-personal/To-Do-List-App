@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +11,7 @@
       android:id="@+id/view1"
       android:layout_width="match_parent"
       android:layout_height="2dp"
-      android:layout_weight="0.5" />
+      android:layout_weight="2" />
 
   <TextView
       android:id="@+id/textViewIntroduction"
@@ -20,7 +19,7 @@
       android:layout_height="wrap_content"
       android:layout_weight="2"
       android:padding="10dp"
-      android:text="@string/hi_dude_let_s_get_started"
+      android:text="@string/hi_mate_let_s_get_started"
       android:textSize="25sp"
       android:textStyle="bold"
       android:layout_gravity="center"
@@ -32,7 +31,8 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:src="@drawable/ic_baseline_done_outline_24" />
+      android:src="@drawable/ic_baseline_done_outline_24"
+      android:contentDescription="@string/tick_icon" />
 
 
   <TextView
@@ -43,7 +43,7 @@
       android:padding="25dp"
       android:paddingStart="10dp"
       android:paddingEnd="10dp"
-      android:text="@string/letsGetStartedDetails1"
+      android:text="@string/thank_you_for_providing_a_coding_challenge_please_follow_through_the_instructions_to_explore_the_app_more"
       android:textAlignment="center"
       android:textColor="@color/black"
       android:textSize="20sp"
@@ -54,11 +54,11 @@
       android:id="@+id/view2"
       android:layout_width="match_parent"
       android:layout_height="2dp"
-      android:layout_weight="0.5" />
+      android:layout_weight="1.5" />
 
   <Button
       android:id="@+id/button_continue"
-      android:layout_width="match_parent"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="0.3"
       android:padding="4dp"
@@ -68,7 +68,8 @@
       android:textColor="@color/white"
       android:textAllCaps="false"
       android:textStyle="bold"
-      android:textSize="20sp"/>
+      android:textSize="18sp"
+      android:layout_gravity="right"/>
 
 
 </LinearLayout>
