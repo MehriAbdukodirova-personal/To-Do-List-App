@@ -13,6 +13,8 @@ import com.learning.android.to_dolistapp.Model.ToDoModel;
 import java.util.ArrayList;
 import java.util.List;
 
+//This is a class that handles all the database operations...
+
 public class DataBaseHelper extends SQLiteOpenHelper {
 
     private SQLiteDatabase db;
@@ -45,6 +47,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         values.put(COL_2 , model.getTask());
         values.put(COL_3 , 0);
         db.insert(TABLE_NAME , null , values);
+        DataRepository.getInstance().onToDoItemAdded(model);
     }
 
     public void updateTask(int id , String task){

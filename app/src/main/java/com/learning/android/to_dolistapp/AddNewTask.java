@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,18 +19,19 @@ import androidx.annotation.Nullable;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.learning.android.to_dolistapp.Model.ToDoModel;
 import com.learning.android.to_dolistapp.Utils.DataBaseHelper;
+import com.learning.android.to_dolistapp.Utils.DataRepository;
 
 public class AddNewTask extends BottomSheetDialogFragment {
 
     public static final String TAG = "AddNewTask";
 
-    //widgets
     private EditText mEditText;
     private Button mSaveButton;
 
     private DataBaseHelper myDb;
 
     public static AddNewTask newInstance(){
+
         return new AddNewTask();
     }
 
@@ -53,16 +55,26 @@ public class AddNewTask extends BottomSheetDialogFragment {
         boolean isUpdate = false;
 
         final Bundle bundle = getArguments();
-        if (bundle != null){
+
+            if (bundle != null){
+
             isUpdate = true;
             String task = bundle.getString("task");
             mEditText.setText(task);
 
-            if (task.length() > 0 ){
+            if (mEditText.toString().equals("")){
+                    mSaveButton.setEnabled(false);
+                    mSaveButton.setBackgroundColor(Color.GRAY);
+            }else{
+                    mSaveButton.setEnabled(true);
+                    mSaveButton.setBackgroundColor(getResources().getColor(R.color.design_default_color_primary));
+                }
+            if (task.length() <= 0 ){
                 mSaveButton.setEnabled(false);
             }
 
         }
+
         mEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -71,7 +83,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().equals("")){
+                if (mEditText.toString().equals("")){
                     mSaveButton.setEnabled(false);
                     mSaveButton.setBackgroundColor(Color.GRAY);
                 }else{
@@ -91,15 +103,24 @@ public class AddNewTask extends BottomSheetDialogFragment {
             public void onClick(View v) {
                 String text = mEditText.getText().toString();
 
-                if (finalIsUpdate){
-                    myDb.updateTask(bundle.getInt("id") , text);
-                }else{
+                //Ensuring no item with empty description is added to the database.
+                if(text.length() > 1){
                     ToDoModel item = new ToDoModel();
-                    item.setTask(text);
-                    item.setStatus(0);
-                    myDb.insertTask(item);
+                    if (finalIsUpdate){
+                        myDb.updateTask(bundle.getInt("id") , text);
+                    }else{
+                        item.setTask(text);
+                        item.setStatus(0);
+                        myDb.insertTask(item);
+                    }
+                    dismiss();
                 }
-                dismiss();
+                else{
+                    Toast.makeText(mEditText.getContext(),"Note cannot be empty", Toast.LENGTH_LONG).show();
+                }
+
+
+
 
             }
         });
